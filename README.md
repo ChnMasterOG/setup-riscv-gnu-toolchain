@@ -2,6 +2,8 @@
 
 This action sets up a [RISCV GNU toolchain](https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack) environment for use in actions.
 
+ChnMasterOG update
+
 # Usage
 
 Using latest release
