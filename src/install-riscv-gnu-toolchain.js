@@ -25,6 +25,7 @@ async function main() {
   console.log(`##[group]Installing RISCV GNU Toolchain`)
   await installRISCVGNUToolchain()
   
+  console.log(`all done!!!`)
   console.log(`##[endgroup]`)
   core.addPath(`${process.env.RUNNER_TEMP}/.setup-riscv-gnu-toolchain/bin`)
 }
