@@ -9,16 +9,16 @@ ChnMasterOG update
 Using latest release
 ```yaml
 steps:
-- uses: ChnMasterOG/setup-riscv-gnu-toolchain@v3.0
+- uses: ChnMasterOG/setup-riscv-gnu-toolchain@v5.0
 - run: riscv-none-elf-gcc --version
 ```
 
-Using specific release
+Using specific release(used release id which can be find in [RELEASE PAGE](https://api.github.com/repos/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/))
 ```yaml
 steps:
-- uses: ChnMasterOG/setup-riscv-gnu-toolchain@v3.0
+- uses: ChnMasterOG/setup-riscv-gnu-toolchain@v5.0
   with:
-    version: 13.2.0
+    version: 91402143
 - run: riscv-none-elf-gcc --version
 ```
 
