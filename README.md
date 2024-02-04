@@ -1,6 +1,8 @@
 # setup-riscv-gnu-toolchain
 
-This action sets up a [RISCV GNU toolchain](https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack) environment for use in actions.
+This action sets up a [RISCV GNU toolchain](https://github.com/hydrausb3/riscv-none-elf-gcc-xpack) environment for use in actions.
+
+this branch is hydrausb3 version
 
 ChnMasterOG update
 
@@ -13,7 +15,7 @@ steps:
 - run: riscv-none-elf-gcc --version
 ```
 
-Using specific release(used release id which can be find in [RELEASE PAGE](https://api.github.com/repos/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases))
+Using specific release(used release id which can be find in [RELEASE PAGE](https://api.github.com/repos/hydrausb3/riscv-none-elf-gcc-xpack/releases))
 ```yaml
 steps:
 - uses: ChnMasterOG/setup-riscv-gnu-toolchain@v5.0
