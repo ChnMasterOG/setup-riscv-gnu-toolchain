@@ -16,9 +16,9 @@ pushd .setup-riscv-gnu-toolchain
 for i in {1..5}
 do
     if [ -n "$2" ] && [ "$2" != "latest" ]; then
-        build=`curl -s  -H \"Accept: application/json\" $GITHUB_TOKEN_AUTH -L https://api.github.com/repos/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/$2 | grep browser_download_url | grep $1-x64 | grep -v sha | cut -f4 -d\"`
+        build=`curl -s  -H \"Accept: application/json\" $GITHUB_TOKEN_AUTH -L https://api.github.com/repos/hydrausb3/riscv-none-elf-gcc-xpack/releases/$2 | grep browser_download_url | grep $1-x64 | grep -v sha | cut -f4 -d\"`
     else
-        build=`curl -s  -H \"Accept: application/json\" $GITHUB_TOKEN_AUTH -L https://api.github.com/repos/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/latest | grep browser_download_url | grep $1-x64 | grep -v sha | cut -f4 -d\"`
+        build=`curl -s  -H \"Accept: application/json\" $GITHUB_TOKEN_AUTH -L https://api.github.com/repos/hydrausb3/riscv-none-elf-gcc-xpack/releases/latest | grep browser_download_url | grep $1-x64 | grep -v sha | cut -f4 -d\"`
     fi
     if [ -n "$build" ]; then
         break 
