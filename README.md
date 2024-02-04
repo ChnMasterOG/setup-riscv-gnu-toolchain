@@ -13,7 +13,7 @@ steps:
 - run: riscv-none-elf-gcc --version
 ```
 
-Using specific release(used release id which can be find in [RELEASE PAGE](https://api.github.com/repos/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/))
+Using specific release(used release id which can be find in [RELEASE PAGE](https://api.github.com/repos/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases))
 ```yaml
 steps:
 - uses: ChnMasterOG/setup-riscv-gnu-toolchain@v5.0
